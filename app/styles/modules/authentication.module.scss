@@ -1,0 +1,88 @@
+@import "../imports.scss";
+
+.wrapper {
+  background-color: $glo-neutral-2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth_container {
+  width: rem(760px);
+  min-height: rem(480px);
+  height: auto;
+  border-radius: rem(10px);
+  border: solid rem(1px) $auth-container-border;
+  background-color: $glo-neutral-5;
+  @media (max-width: 768px) {
+    margin: 0 rem(15px);
+  }
+  @media (max-height: 500px) {
+    min-height: unset;
+    height: rem(400px);
+    overflow: auto;
+  }
+  @media (max-height: 400px) {
+    min-height: unset;
+    height: rem(300px);
+    overflow: auto;
+  }
+}
+
+#auth_image {
+  width: 100%;
+  height: 100%;
+  border-radius: rem(10px) 0 0 rem(10px);
+}
+
+.form_container {
+  padding: 0 rem(40px);
+
+  :global(.ant-form-item) {
+    margin: 0;
+  }
+
+  .logo {
+    margin-top: rem(40px);
+  }
+
+  .form {
+    margin-top: rem(41px);
+
+    h2{
+      color: $glo-neutral-4;
+    }
+
+    .p2_auth {
+      margin: rem(25px) 0;
+      color: $glo-neutral-4;
+    }
+
+    .button_p2 {
+      font-weight: 600;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 0 rem(25px);
+  }
+}
+
+.footer {
+  padding-bottom: rem(20px);
+  p {
+    margin-bottom: 0;
+  }
+  .label {
+    text-align: center; 
+    color: $glo-neutral-4;
+    a {
+      text-decoration: underline;
+      color: $glo-neutral-4;
+    }
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+    <defs>
+        <filter id="cws55koa6a">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" filter="url(#cws55koa6a)" transform="translate(-25 -17)">
+        <g stroke="#200E32" stroke-width="1.5" transform="translate(27 19)">
+            <circle cx="9.767" cy="9.767" r="8.989"/>
+            <path d="M16.018 16.485L19.542 20"/>
+        </g>
+    </g>
+</svg>

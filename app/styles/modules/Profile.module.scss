@@ -1,0 +1,297 @@
+@import "../imports";
+
+.profile_wrapper {
+  margin-top: rem(205px);
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 rem(15px);
+    margin-top: rem(40px);
+  }
+}
+
+.profile_card {
+  width: rem(465px);
+  min-height: rem(350px);
+  background-color: $glo-neutral-3;
+  border-radius: rem(15px);
+  .container {
+    padding: rem(10px);
+    position: relative;
+  }
+  .items {
+    display: flex;
+    justify-content: center;
+    .dropdown_trigger {
+      position: absolute;
+      top: rem(10px);
+      left: rem(10px);
+      width: rem(40px);
+      height: rem(40px);
+      border-radius: rem(10px);
+      background-color: $tripple-dot-dropdown-trigger;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: rem(17px);
+        height: rem(17px);
+        margin: 0;
+      }
+    }
+    .middle_items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: rem(60px);
+      .user_image {
+        position: relative;
+        img {
+          width: rem(100px);
+          height: rem(100px);
+          border-radius: rem(50px);
+        }
+      }
+      .user_name {
+        font-family: Rubik-Regular;
+        font-size: rem(21px);
+        color: $glo-neutral-5;
+        margin-top: rem(45px);
+      }
+      .user_full_name {
+        font-family: Rubik-Regular;
+        font-size: rem(14px);
+        opacity: 0.3;
+        color: $glo-neutral-5;
+        margin-top: rem(5px);
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.dropdown_wrapper {
+  width: rem(190px);
+  height: rem(130px);
+  border-radius: rem(10px);
+  box-shadow: 0 0 rem(20px) 0 $dropdown-shadow;
+  background-color: $glo-neutral-5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .dropdown_items {
+    margin: rem(10px) 0;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: rem(130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dropdown_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: rem(50px);
+      img {
+        width: rem(14px);
+        height: rem(14px);
+      }
+    }
+    .dropdown_text {
+      font-family: Rubik-Regular;
+      font-size: rem(14px);
+      color: $glo-neutral-2;
+    }
+    .logout {
+      font-family: Rubik-Regular;
+      font-size: rem(14px);
+      color: $logout;
+    }
+  }
+}
+
+.gift_modal {
+  :global(.ant-modal-content) {
+    background-color: $gift-modal-background;
+    border-radius: rem(30px);
+  }
+  :global(.ant-modal-body) {
+    padding: 0;
+  }
+  .modal_header {
+    padding: rem(20px) 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .close {
+      cursor: pointer;
+      position: absolute;
+      left: rem(20px);
+    }
+    .title {
+      span {
+        font-family: Rubik-Regular;
+        font-size: rem(17px);
+        color: $glo-neutral-5;
+      }
+    }
+  }
+  .inputs_container {
+    padding: 0 rem(20px) rem(20px) rem(20px);
+    .input_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        margin-top: rem(40px);
+        font-family: Rubik-Regular;
+        font-size: rem(14px);
+        color: $glo-neutral-5;
+        margin-bottom: rem(20px);
+      }
+      .custom_input {
+        width: 100%;
+        position: relative;
+        input {
+          height: rem(55px);
+          width: 100%;
+          border-radius: rem(15px);
+          background-color: $input-white-background;
+          border: none;
+          outline: none;
+          padding-left: rem(20px);
+          font-size: Rubik-Regular;
+          font-size: rem(14px);
+          color: $gift-input-color;
+        }
+        button {
+          cursor: pointer;
+          position: absolute;
+          right: rem(5px);
+          top: rem(5px);
+          height: rem(45px);
+          border-radius: rem(10px);
+          background-color: $glo-primary-2;
+          border: none;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .copy {
+          padding: rem(15px);
+        }
+        .invite {
+          padding: rem(14px) rem(24px);
+          font-family: Rubik-Medium;
+          font-size: rem(14px);
+          color: $glo-neutral-5;
+        }
+      }
+    }
+  }
+}
+
+.rank_wrapper {
+  position: absolute;
+  bottom: rem(10px);
+  left: rem(26px);
+  height: rem(39px);
+  img {
+    width: rem(50px) !important;
+  }
+  span {
+    position: absolute;
+    top: rem(39px);
+    left: rem(10px);
+    font-family: Rubik-medium;
+    font-size: rem(17px);
+    color: $glo-neutral-5;
+  }
+}
+
+// edit profile
+
+.edit_profile_wrapper {
+  margin-top: rem(155px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0 rem(15px);
+    margin-top: rem(40px);
+  }
+}
+
+.edit_input_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0 rem(35px);
+  margin-bottom: rem(20px);
+  grid-column-gap: rem(25px);
+  .input_label {
+    align-self: center;
+    font-family: Rubik-regular;
+    font-size: rem(14px);
+    opacity: 0.7;
+    color: $glo-neutral-5;
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    .input_label {
+      display: none;
+    }
+  }
+}
+
+.edit_inputs_container {
+  margin-top: rem(40px);
+}
+
+.edit_profile_item {
+  position: relative;
+}
+
+.edit_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    width: rem(240px);
+  }
+}
+
+.button_p2 {
+  font-family: Rubik-medium;
+  font-size: rem(17px);
+  font-weight: 500;
+}
+
+.edit_user_image {
+  width: rem(100px);
+  height: rem(100px);
+  position: relative;
+  .user {
+    border-radius: rem(50px);
+  }
+  .edit_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $edit-image-profile-color;
+    width: 100%;
+    height: 100%;
+    border-radius: rem(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

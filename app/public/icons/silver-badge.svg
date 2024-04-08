@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="49" viewBox="0 0 53 49">
+    <defs>
+        <linearGradient id="7fldrul96a" x1="100%" x2="0%" y1="12.444%" y2="87.556%">
+            <stop offset="0%" stop-color="#8A8A9C"/>
+            <stop offset="100%" stop-color="#525262"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path fill="url(#7fldrul96a)" stroke="#2A2A41" stroke-opacity=".051" stroke-width="5" d="M27.62-2.5c2.525.015 3.595.195 4.619.506l.267.084c1.33.432 2.482 1.098 3.52 2.036.905.817 1.62 1.633 3.116 4.232h0l4.806 8.35c1.493 2.596 1.839 3.622 2.091 4.814.29 1.365.288 2.694-.004 4.059-.256 1.19-.603 2.216-2.103 4.808h0l-4.787 8.276c-1.499 2.592-2.214 3.405-3.119 4.22-1.037.934-2.188 1.598-3.516 2.028-1.158.375-2.22.587-5.213.587h0-9.594c-2.993 0-4.055-.212-5.213-.587-1.328-.43-2.479-1.094-3.516-2.028-.905-.815-1.62-1.628-3.12-4.22h0L1.069 26.39c-1.5-2.592-1.847-3.617-2.103-4.808-.292-1.365-.294-2.694-.004-4.06.252-1.19.598-2.217 2.091-4.812h0l4.806-8.35C7.353 1.758 8.068.942 8.974.125c1.038-.938 2.19-1.604 3.52-2.036 1.122-.364 2.155-.576 4.906-.59h0z" transform="translate(-605 -626) translate(584 500) translate(0 115) translate(21 11) translate(4 5)"/>
+                            <text fill="#FFF" font-family="Rubik-Medium, Rubik" font-size="21" font-weight="400" transform="translate(-605 -626) translate(584 500) translate(0 115) translate(21 11) translate(4 5)">
+                                <tspan x="16.49" y="27">2</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

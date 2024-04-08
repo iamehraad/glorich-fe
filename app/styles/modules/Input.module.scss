@@ -1,0 +1,73 @@
+@import "../imports";
+
+.authentication {
+  :global(.ant-input) {
+    border-radius: rem(10px);
+    border: solid rem(1px) $auth-button-border;
+    height: rem(50px);
+    padding-left: rem(20px);
+    font-family: Rubik-regular;
+    font-size: rem(17px);
+    color: $glo-neutral-4;
+  }
+}
+
+.authentication_password {
+  :global(.ant-input-password) {
+    border-radius: rem(10px);
+    border: solid rem(1px) $auth-button-border;
+    height: rem(50px);
+    padding-left: rem(20px);
+    font-family: Rubik-regular;
+    font-size: rem(17px);
+    color: $glo-neutral-4;
+  }
+  :global(.ant-input) {
+    border-radius: rem(10px);
+    border: solid rem(1px) $auth-button-border;
+    padding-left: rem(20px);
+    font-family: Rubik-regular;
+    font-size: rem(17px);
+    color: $glo-neutral-4;
+  }
+}
+
+.navigation_searchbar {
+  position: relative;
+  width: 100%;
+  max-width: rem(709px);
+  :global(.ant-input) {
+    border-radius: rem(30px);
+    border: none;
+    height: rem(60px);
+    padding-left: rem(70px);
+    font-family: Rubik-regular;
+    color: $glo-neutral-5;
+    font-size: rem(17px);
+    background-color: $searchbar-background;
+  }
+  :global(.ant-input)::placeholder {
+    opacity: 0.5;
+  }
+  #searchbar_icon {
+    position: absolute;
+    left: rem(25px);
+    top: rem(17px);
+  }
+  @media (max-width: 768px) {
+    margin: rem(15px) 0;
+  }
+}
+
+.edit_profile {
+  :global(.ant-input) {
+    background-color: $glo-neutral-2;
+    border-radius: rem(10px);
+    border: none;
+    height: rem(50px);
+    padding-left: rem(20px);
+    font-family: Rubik-regular;
+    font-size: rem(17px);
+    color: $glo-neutral-5;
+  }
+}

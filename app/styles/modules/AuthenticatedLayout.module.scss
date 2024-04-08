@@ -1,0 +1,63 @@
+@import "../imports";
+
+.authenticated_wrapper {
+  min-height: 100vh;
+  background-color: $glo-neutral-2;
+  position: relative;
+  .authenticated_body {
+    padding-bottom: rem(200px);
+    @media (max-width: 768px) {
+      padding-bottom: rem(180px);
+    }
+  }
+  .footer_handler {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.header_block {
+  margin: 0 rem(40px);
+  @media (max-width: 992px) {
+    margin: 0 rem(20px);
+  }
+}
+
+.block_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  img {
+    margin: rem(66px) 0 rem(36px) 0;
+    @media (max-width: 768px) {
+      margin: rem(72px) 0;
+      height: rem(60px);
+    }
+    @media (max-width: 400px) {
+      height: rem(40px);
+    }
+  }
+  button {
+    margin-bottom: rem(52px);
+  }
+}
+
+.scoreboard {
+  margin-top: rem(100px);
+  :global(.ant-col) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    margin: rem(15px) rem(20px) 0 rem(20px);
+  }
+}
+
+.user_card_wrapper {
+  padding: rem(20px) 0;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}

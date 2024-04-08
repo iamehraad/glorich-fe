@@ -1,0 +1,61 @@
+@import "function";
+
+@font-face {
+  font-family: Rubik-bold;
+  src: url("Rubik/Rubik-Bold.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Rubik-medium;
+  src: url("Rubik/Rubik-Medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: Rubik-regular;
+  src: url("Rubik/Rubik-Regular.ttf") format("opentype");
+}
+
+h1,
+h1.title {
+  font-family: "Rubik-bold", "sans-serif";
+  font-size: rem(27px);
+  line-height: rem(32px);
+}
+
+h2,
+h2.title {
+  font-family: "Rubik-bold", "sans-serif";
+  font-size: rem(23px);
+  line-height: rem(28px);
+}
+
+h3,
+h3.title {
+  font-family: "Rubik-medium", "sans-serif";
+  font-size: rem(21px);
+  line-height: rem(25px);
+}
+
+.p1 {
+  font-family: "Rubik-medium", "sans-serif";
+  font-size: rem(17px);
+  line-height: rem(20px);
+}
+
+.p2 {
+  font-family: "Rubik-regular", "sans-serif";
+  font-size: rem(14px);
+  line-height: rem(17px);
+}
+.button_p2 {
+  font-family: "Rubik-regular", "sans-serif";
+  font-size: rem(16px);
+  line-height: rem(17px);
+}
+
+label,
+.label {
+  font-family: "Rubik-regular", "sans-serif";
+  font-size: rem(12px);
+  line-height: rem(19px);
+}

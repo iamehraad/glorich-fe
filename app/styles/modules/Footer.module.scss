@@ -1,0 +1,48 @@
+@import "../imports";
+
+.wrapper {
+  background-color: $glo-neutral-3;
+  .contents {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+    padding: 0 rem(120px);
+    @media (min-width: 1600px) {
+      padding: 0 rem(240px);
+    }
+    @media (max-width: 992px) {
+      padding: 0 rem(20px);
+    }
+    .items_left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      .has_space {
+        margin: 0 rem(30px);
+      }
+    }
+    .items_right {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .has_space {
+        margin-left: rem(30px);
+      }
+    }
+    .links {
+      cursor: pointer;
+      opacity: 0.6;
+      font-family: Rubik-regular;
+      font-size: rem(14px);
+      color: $glo-neutral-5;
+      @media (max-width: 768px) {
+        font-size: rem(12px);
+      }
+    }
+    .copy_right {
+      width: 100%;
+      text-align: center;
+    }
+    :global(.ant-row) {
+      padding: rem(10px) 0;
+    }
+  }
+}

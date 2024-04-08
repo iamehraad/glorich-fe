@@ -1,0 +1,51 @@
+@import "../imports";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authentication {
+  img {
+    height: rem(35px);
+    width: auto;
+    margin-right: rem(12px);
+  }
+  span {
+    font-weight: 500;
+    font-size: rem(27px);
+    font-family: Rubik-medium;
+  }
+  .glo {
+    color: $glo-neutral-4;
+  }
+
+  .rich {
+    color: $glo-primary-1;
+  }
+}
+.not_authenticated_nav {
+  img {
+    height: rem(34px);
+    width: rem(auto);
+    margin-right: rem(12px);
+  }
+  span {
+    font-weight: 500;
+    font-size: rem(27px);
+    font-family: Rubik-medium;
+  }
+  .glo {
+    color: $glo-neutral-5;
+  }
+
+  .rich {
+    color: $glo-primary-1;
+  }
+  @media (max-width: 768px) {
+    .glo, .rich {
+      display: none;
+    }
+  }
+}

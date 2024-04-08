@@ -1,0 +1,127 @@
+@import "../imports.scss";
+.hexagon {
+  width: ($hexagon-size-medium * 0.645);
+  height: $hexagon-size-medium;
+  border-radius: ($hexagon-size-medium / 8);
+
+  @media (max-width: 768px) {
+    width: ($hexagon-size-small * 0.645);
+    height: $hexagon-size-small;
+    border-radius: ($hexagon-size-small / 8);
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+  }
+
+  &:before {
+    transform: rotate(60deg);
+  }
+
+  &:after {
+    transform: rotate(-60deg);
+  }
+}
+
+.outer_hexagon {
+  background-color: $glo-primary-1;
+}
+
+.inner_hexagon {
+  width: ($hexagon-inner-medium * 0.645);
+  height: $hexagon-inner-medium;
+  border-radius: ($hexagon-inner-medium / 8);
+  position: absolute;
+  bottom: 14%;
+  left: rem(1.6px);
+  @media (max-width: 768px) {
+    width: ($hexagon-inner-small * 0.645);
+    height: $hexagon-inner-small;
+    border-radius: ($hexagon-inner-small / 8);
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+  }
+
+  &:before {
+    transform: rotate(60deg);
+  }
+
+  &:after {
+    transform: rotate(-60deg);
+  }
+}
+
+.badge_wrapper {
+  position: relative;
+  .rank {
+    position: absolute;
+    top: rem(3px);
+    left: rem(7px);
+    font-family: Rubik-medium;
+    font-size: rem(21px);
+    color: $glo-neutral-5;
+    opacity: 0.3;
+    @media (max-width: 768px) {
+      top: rem(4px);
+      left: rem(6px);
+      font-size: rem(14px);
+    }
+  }
+}
+
+.rank-1 {
+  background-color: $hexagon-gold;
+}
+.rank-2 {
+  background-color: $hexagon-silver;
+}
+.rank-3 {
+  background-color: $hexagon-bronze;
+}
+
+.rank-number-1,
+.rank-number-2,
+.rank-number-3 {
+  color: $glo-neutral-5;
+  opacity: 1 !important;
+}
+
+.inner_hexagon {
+  background-color: $inner-hexagon-color;
+}
+
+.double_wrapper {
+  position: relative;
+}
+
+.rank_double {
+  color: $glo-neutral-5;
+  position: absolute;
+  font-size: 17px;
+  font-family: Rubik-medium;
+  top: rem(-26px);
+}

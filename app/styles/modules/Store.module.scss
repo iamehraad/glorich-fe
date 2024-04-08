@@ -1,0 +1,291 @@
+@import "../imports";
+
+.store_wrapper,
+.payment_wrapper,
+.final_wrapper {
+  margin-top: rem(45px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 1000px) {
+    width: 100%;
+    padding: 0 rem(15px);
+    margin-top: rem(40px);
+  }
+}
+
+.back_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.store_container {
+  width: rem(953px);
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.store_card {
+  border-radius: rem(15px);
+  background-color: $store-card-background;
+  .store_container {
+    padding: rem(51px) rem(40px) rem(38px) rem(40px);
+    @media (max-width: 1000px) {
+      padding: rem(20px) rem(15px) 0 rem(15px);
+    }
+  }
+  .title {
+    h1 {
+      color: $glo-neutral-5;
+    }
+  }
+  .options {
+    margin-top: rem(80px);
+    @media (max-width: 1000px) {
+      margin-top: rem(40px);
+    }
+    .label {
+      margin-bottom: rem(4px);
+      p {
+        font-family: Rubik-medium;
+        font-size: rem(14px);
+        color: $glo-neutral-5;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.option_card {
+  width: 100%;
+  height: rem(350px);
+  border-radius: rem(20px);
+  .title {
+    color: $glo-neutral-5;
+    padding-left: rem(20px);
+    padding-top: rem(25px);
+    text-transform: uppercase;
+  }
+}
+
+.get_better {
+  background-image: radial-gradient(circle at 0 0, #69d2ee, #69b2ee);
+  div {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(15px);
+    img {
+      height: rem(216px);
+    }
+  }
+}
+
+.top_twenty {
+  background-image: radial-gradient(circle at 0 0, #a485ff, #7872fb 100%);
+  div {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(15px);
+    img {
+      height: rem(267px);
+    }
+  }
+}
+
+.top_ten {
+  background-image: radial-gradient(circle at 0 0, #fe7597, #ff6c64);
+  div {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(15px);
+    img {
+      height: rem(270px);
+    }
+  }
+}
+
+.richest {
+  background-image: radial-gradient(circle at 0 0, #ff943d, #ffb555);
+  div {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(28px);
+    img {
+      height: rem(280px);
+    }
+  }
+}
+
+.credits {
+  margin-top: rem(40px);
+  .label {
+    margin-bottom: rem(4px);
+    p {
+      font-family: Rubik-medium;
+      font-size: rem(14px);
+      color: $glo-neutral-5;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.credit_card {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+// payment
+
+.payment_card {
+  border-radius: rem(15px);
+  background-color: $store-card-background;
+  .payment_container {
+    padding: rem(50px) rem(40px) rem(0px) rem(40px);
+    margin-bottom: rem(8px);
+    @media (max-width: 1000px) {
+      padding: rem(20px) rem(15px) 0 rem(15px);
+    }
+  }
+  .title {
+    width: rem(398px);
+    @media (max-width: 768px) {
+      width: rem(203px);
+    }
+    h1 {
+      color: $glo-neutral-5;
+      text-transform: uppercase;
+      @media (max-width: 768px) {
+        font-size: rem(21px);
+      }
+    }
+  }
+}
+
+.payment_container {
+  width: rem(709px);
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+  .options {
+    width: rem(398px);
+    margin-top: rem(80px);
+    padding-bottom: rem(8px) !important;
+    .option_card {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background-color: $score-board-background-hover;
+      border-radius: rem(15px);
+      padding: rem(10px);
+      p {
+        text-transform: uppercase;
+        font-size: rem(14px);
+        font-family: Rubik-medium;
+        color: $glo-neutral-5;
+        text-align: center;
+        padding-bottom: rem(1px);
+        margin-top: rem(8px);
+        margin-bottom: 0;
+      }
+      .image_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: rem(160px);
+        height: rem(130px);
+        border-radius: rem(10px);
+        background-color: $glo-neutral-3;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+    .option_card:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: rem(20px);
+    }
+  }
+}
+
+// final
+
+.final_container {
+  width: rem(709px);
+  @media (max-width: 1000px) {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.final_card {
+  border-radius: rem(15px);
+  background-color: $store-card-background;
+  .final_container {
+    padding: rem(50px) rem(40px) rem(8px) rem(40px);
+    @media (max-width: 1000px) {
+      padding: rem(20px) rem(15px) 0 rem(15px);
+    }
+  }
+  .title {
+    h1 {
+      margin-top: rem(20px);
+      color: $glo-neutral-5;
+    }
+    @media (max-width: 768px) {
+      img {
+        display: none;
+      }
+      h1 {
+        margin-top: 0;
+      }
+    }
+  }
+  .information_wrapper {
+    margin-top: rem(80px);
+    .information {
+      display: flex;
+      align-items: center;
+      margin-bottom: rem(30px);
+      span {
+        font-family: Rubik-regular;
+        font-size: rem(14px);
+        color: $glo-neutral-5;
+        opacity: 0.5;
+      }
+      p {
+        margin-bottom: 0;
+        font-family: Rubik-regular;
+        font-size: rem(17px);
+        color: $glo-neutral-5;
+        margin-left: rem(10px);
+      }
+    }
+    @media (max-width: 768px) {
+      margin-top: rem(40px);
+    }
+  }
+}
+
+.button_wrapper {
+  margin-top: rem(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    width: rem(240px);
+    .purchase_button {
+      font-family: Rubik-medium;
+      font-size: rem(17px);
+      color: $glo-neutral-5;
+    }
+  }
+}

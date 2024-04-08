@@ -1,0 +1,158 @@
+@import "../imports";
+
+.authentication {
+  width: 100%;
+  height: rem(50px);
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+  text-align: center;
+  border: none;
+  border-radius: rem(10px);
+  margin: rem(25px) 0 rem(51px);
+  cursor: pointer;
+  font-size: rem(17px);
+}
+
+.authentication:hover {
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+}
+
+.authentication:focus {
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+}
+
+.navigation-sign-in {
+  color: $glo-neutral-5;
+  width: rem(45px);
+  height: rem(19px);
+  background-color: transparent;
+  font-family: Rubik-regular;
+  border: none;
+  padding: 0;
+}
+
+.navigation-sign-in:hover {
+  background-color: transparent;
+  color: $glo-neutral-5;
+}
+.navigation-sign-in:focus {
+  background-color: transparent;
+  color: $glo-neutral-5;
+}
+
+.navigation-sign-up {
+  color: $glo-neutral-5;
+  width: rem(100px);
+  height: rem(40px);
+  border-radius: rem(10px);
+  background-color: $glo-primary-2;
+  box-shadow: 0px rem(1.5px) 0px 0px $sign-up-shadow-color;
+  font-family: Rubik-regular;
+  border: none;
+}
+
+.navigation-sign-up:hover {
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+}
+.navigation-sign-up:focus {
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+}
+
+.not_authenticated_header_block {
+  color: $glo-neutral-5;
+  width: rem(190px);
+  height: rem(55px);
+  border-radius: rem(15px);
+  background-color: $glo-neutral-4;
+  box-shadow: 0 rem(2px) 0 0 $not-authenticated-header-block-box-shadow;
+  font-family: Rubik-medium;
+  font-size: rem(17px);
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.not_authenticated_header_block:hover {
+  background-color: $glo-neutral-4;
+  color: $glo-neutral-5;
+}
+.not_authenticated_header_block:focus {
+  background-color: $glo-neutral-4;
+  color: $glo-neutral-5;
+}
+
+.user_card {
+  width: 100%;
+  height: rem(50px);
+  background-color: $glo-primary-2;
+  box-shadow: 0px rem(2px) 0px 0px $sign-up-shadow-color;
+  color: $glo-neutral-5;
+  text-align: center;
+  border: none;
+  border-radius: rem(10px);
+  margin-bottom: 0 !important;
+  cursor: pointer;
+}
+
+.user_card:hover {
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+}
+
+.user_card:focus {
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+}
+
+.edit_profile {
+  width: 100%;
+  height: rem(50px);
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+  text-align: center;
+  border: none;
+  border-radius: rem(10px);
+  margin: rem(20px) 0 rem(38px) 0;
+  cursor: pointer;
+  font-size: rem(17px);
+  box-shadow: 0px rem(3px) 0px 0px $sign-up-shadow-color;
+}
+
+.edit_profile:hover {
+  background-color: $glo-primary-2;
+  color: $glo-neutral-5;
+}
+
+
+.back_button {
+  cursor: pointer;
+  width: rem(465px);
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: rem(20px);
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(87px);
+    height: rem(40px);
+    border-radius: rem(10px);
+    background-color: $user-figure-background-color;
+    img {
+      margin-right: rem(15px);
+    }
+    font-size: rem(14px);
+    color: $glo-neutral-5;
+    font-family: Rubik-medium;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

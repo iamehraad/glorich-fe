@@ -1,0 +1,287 @@
+@import "../imports";
+
+.user_figure {
+  display: flex;
+  align-items: center;
+  .separator {
+    background-color: $glo-neutral-5;
+    opacity: 0.3;
+    width: rem(1px);
+    height: rem(15px);
+  }
+  .price {
+    margin: 0 rem(15px);
+    color: $glo-neutral-5;
+  }
+  .user_image {
+    margin-left: rem(15px);
+    width: rem(58px);
+    height: rem(58px);
+    border-radius: rem(50px);
+    background-color: $user-figure-background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: rem(50px);
+      height: rem(50px);
+      border-radius: rem(50px);
+    }
+  }
+}
+
+.user_card {
+  width: rem(380px);
+  background-color: $glo-neutral-3;
+  border-radius: rem(15px);
+  .container {
+    padding: rem(10px);
+  }
+  .items {
+    display: flex;
+    justify-content: space-between;
+    .dropdown_trigger {
+      width: rem(40px);
+      height: rem(40px);
+      border-radius: rem(10px);
+      background-color: $tripple-dot-dropdown-trigger;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: rem(17px);
+        height: rem(17px);
+        margin: 0;
+      }
+    }
+  }
+  .middle_items {
+    margin-top: rem(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .user_image {
+      position: relative;
+      .user {
+        width: rem(100px);
+        height: rem(100px);
+        margin: 0;
+        border-radius: rem(50px);
+      }
+      .medal {
+        width: rem(40px);
+        height: rem(50px);
+        position: absolute;
+        margin-top: 0;
+        top: 0;
+        right: rem(-20px);
+      }
+    }
+    .user_name {
+      font-family: Rubik-Regular;
+      font-size: rem(17px);
+      color: $glo-neutral-5;
+      margin-top: rem(15px);
+    }
+    .user_value {
+      font-family: Rubik-Medium;
+      font-size: rem(23px);
+      color: $glo-neutral-5;
+      margin-top: rem(5px);
+      margin-bottom: rem(15px);
+    }
+  }
+  .right_item {
+    .gift {
+      width: rem(40px);
+      height: rem(40px);
+      border-radius: rem(10px);
+      background-color: $glo-neutral-orange;
+      box-shadow: 0px rem(2px) 0px 0px $orange-button-shadow-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: rem(17px);
+        height: rem(17px);
+        margin: 0;
+      }
+    }
+  }
+  .button_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    #position {
+      font-family: Rubik-medium;
+      font-size: rem(21px);
+      font-weight: 500;
+      opacity: 0.7;
+      position: absolute;
+      left: 0;
+    }
+    #text {
+      font-family: Rubik-medium;
+      font-size: rem(17px);
+      font-weight: 500;
+      vertical-align: middle;
+    }
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.dropdown_wrapper {
+  width: rem(190px);
+  height: rem(90px);
+  border-radius: rem(10px);
+  box-shadow: 0 0 rem(20px) 0 $dropdown-shadow;
+  background-color: $glo-neutral-5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .dropdown_items {
+    cursor: pointer;
+    width: 100%;
+    height: rem(40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dropdown_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: rem(18px);
+      img {
+        width: rem(14px);
+        height: rem(14px);
+      }
+    }
+    .dropdown_text {
+      font-family: Rubik-Regular;
+      font-size: rem(14px);
+      color: $glo-neutral-2;
+    }
+    .logout {
+      font-family: Rubik-Regular;
+      font-size: rem(14px);
+      color: $logout;
+    }
+  }
+}
+
+.gift_modal {
+  :global(.ant-modal-content) {
+    background-color: $gift-modal-background;
+    border-radius: rem(30px);
+  }
+  :global(.ant-modal-body) {
+    padding: 0;
+  }
+  .modal_header {
+    padding: rem(20px) 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .close {
+      cursor: pointer;
+      position: absolute;
+      left: rem(20px);
+    }
+    .title {
+      span {
+        font-family: Rubik-Regular;
+        font-size: rem(17px);
+        color: $glo-neutral-5;
+      }
+    }
+  }
+  .image_handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/images/gift-background.svg");
+    background-position: center bottom;
+    height: rem(250px);
+    img {
+      margin-top: rem(-40px);
+    }
+  }
+  .description {
+    margin-top: rem(-50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-family: Rubik-Bold;
+      font-size: rem(27px);
+      color: $glo-primary-2;
+      margin-bottom: 0;
+    }
+    span {
+      font-family: Rubik-Regular;
+      font-size: rem(17px);
+      color: $glo-neutral-5;
+    }
+  }
+  .inputs_container {
+    padding: 0 rem(20px) rem(20px) rem(20px);
+    .input_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        margin-top: rem(40px);
+        font-family: Rubik-Regular;
+        font-size: rem(14px);
+        color: $glo-neutral-5;
+        margin-bottom: rem(20px);
+      }
+      .custom_input {
+        width: 100%;
+        position: relative;
+        input {
+          height: rem(55px);
+          width: 100%;
+          border-radius: rem(15px);
+          background-color: $input-white-background;
+          border: none;
+          outline: none;
+          padding-left: rem(20px);
+          font-size: Rubik-Regular;
+          font-size: rem(14px);
+          color: $gift-input-color;
+        }
+        button {
+          cursor: pointer;
+          position: absolute;
+          right: rem(5px);
+          top: rem(5px);
+          height: rem(45px);
+          border-radius: rem(10px);
+          background-color: $glo-primary-2;
+          border: none;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .copy {
+          padding: rem(15px);
+        }
+        .invite {
+          padding: rem(14px) rem(24px);
+          font-family: Rubik-Medium;
+          font-size: rem(14px);
+          color: $glo-neutral-5;
+        }
+      }
+    }
+  }
+}
